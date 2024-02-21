@@ -1,17 +1,17 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 
 
 function Home() {
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
 
-    const navegar = () =>{
-        navigate("/Singleton");
-      }
-      
+    const navegar = () => {
+        //navigate("/Singleton");
+    }
+
     return (
         <div>
-            <div onClick={ () => {navegar()} } >{'hola listo?'}</div>
+            <div onClick={() => { navegar() }} >{'hola listo?'}</div>
         </div>
     )
 }

@@ -14,33 +14,43 @@ function App() {
 
   return (
     <>
-      <div>hola</div>
-      <BrowserRouter>
-        <div className="App">
-          <header className="App-header">
-            <Routes>
-              <Route path="/" element={
-                <>
-                  <Home></Home>
-                </>
-              } />
-              <Route path="/Singleton" element={
-                <>
-                  <UserName />
-                  <UserAge />
-                </>
-              } />
-              <Route path="/Decorator" element={
-                <>
-                  <Archivo />
-                  <ArchivoSin />
-                </>
-              } />
+      <div className="App">
+        <header className="App-header">
+          <div>hola</div>
+          <Home></Home>
+          <UserName />
+          <UserAge />
+        </header>
+      </div>
+      {
+        /*
+          <BrowserRouter>
+            <div className="App">
+              <header className="App-header">
+                <Routes>
+                  <Route path="/" element={
+                    <>
+                      <Home></Home>
+                    </>
+                  } />
+                  <Route path="/Singleton" element={
+                    <>
+                      
+                    </>
+                  } />
+                  <Route path="/Decorator" element={
+                    <>
+                      <Archivo />
+                      <ArchivoSin />
+                    </>
+                  } />
 
-            </Routes>
-          </header>
-        </div>
-      </BrowserRouter>
+                </Routes>
+              </header>
+            </div>
+          </BrowserRouter>
+        */
+      }
     </>
   );
 }
