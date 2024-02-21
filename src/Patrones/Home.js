@@ -1,18 +1,18 @@
 import React from 'react';
-//import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
     //const navigate = useNavigate();
 
-    const navegar = () => {
+    const navegar = (rut) => {
         //navigate("/Singleton");
     }
 
     return (
         <div>
-            <div onClick={() => { navegar() }} >{'hola listo?'}</div>
-        </div>
+            <div >{'----------------'}</div>
+        </div >
     )
 }
 

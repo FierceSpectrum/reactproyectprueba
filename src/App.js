@@ -1,23 +1,47 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
-import Home from './Patrones/Home';
+import Home1 from './Patrones/Home';
 import UserName from './Patrones/Singleton/UserName';
 import UserAge from './Patrones/Singleton/UserAge';
 import Archivo from './Patrones/Decorator/Archivo';
 import ArchivoSin from './Patrones/Decorator/ArchivoSin';
 
+import Home from './routes/home';
+import Contact from './routes/contact';
+import About from './routes/about';
 
+
+const router = createHashRouter([
+  {
+    path: '/',
+    element: <Home />
+  },
+  {
+    path: '/contact',
+    element: <Contact />
+  },
+  {
+    path: '/about',
+    element: <About />
+  },
+])
 
 function App() {
 
 
   return (
     <>
+
       <div className="App">
         <header className="App-header">
-          <div>hola</div>
-          <Home></Home>
+          <Home1></Home1>
+          <RouterProvider router={router}>
+
+          </RouterProvider>
+          ----------------
+          <br/>
+          Futer:
           <UserName />
           <UserAge />
         </header>
