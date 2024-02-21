@@ -1,7 +1,7 @@
 import './App.css';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider, Route, Routes } from 'react-router-dom';
 
-import Home1 from './Patrones/Home';
+import Navegation from './Patrones/Home';
 import UserName from './Patrones/Singleton/UserName';
 import UserAge from './Patrones/Singleton/UserAge';
 import Archivo from './Patrones/Decorator/Archivo';
@@ -35,12 +35,11 @@ function App() {
 
       <div className="App">
         <header className="App-header">
-          <Home1></Home1>
           <RouterProvider router={router}>
-
+            <Navegation />
           </RouterProvider>
           ----------------
-          <br/>
+          <br />
           Futer:
           <UserName />
           <UserAge />
