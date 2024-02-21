@@ -13,32 +13,35 @@ function App() {
 
 
   return (
-    <BrowserRouter>
-      <div className="App">
-        <header className="App-header">
-          <Routes>
-            <Route path="/" element={
-              <>
-                <Home></Home>
-              </>
-            } />
-            <Route path="/Singleton" element={
-              <>
-                <UserName />
-                <UserAge />
-              </>
-            } />
-            <Route path="/Decorator" element={
-              <>
-                <Archivo/>
-                <ArchivoSin/>
-              </>
-            } />
+    <>
+      <div>hola</div>
+      <BrowserRouter>
+        <div className="App">
+          <header className="App-header">
+            <Routes>
+              <Route path="/" element={
+                <>
+                  <Home></Home>
+                </>
+              } />
+              <Route path="/Singleton" element={
+                <>
+                  <UserName />
+                  <UserAge />
+                </>
+              } />
+              <Route path="/Decorator" element={
+                <>
+                  <Archivo />
+                  <ArchivoSin />
+                </>
+              } />
 
-          </Routes>
-        </header>
-      </div>
-    </BrowserRouter>
+            </Routes>
+          </header>
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
